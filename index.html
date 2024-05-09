@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="计算巢是阿里云开放给企业应用服务商的服务管理平台。服务商能够在计算巢上发布私有化部署服务，为其客户提供云上软件一键部署的能力；同时也支持全托管模式的服务，赋能服务商托管其客户资源。">
+  <title>JumpServer社区版服务实例部署文档 - Aliyun 计算巢 x Demo</title>
+
+  <link rel="shortcut icon" href="img/favicon.ico">
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+  <link rel="stylesheet" href="css/theme.css">
+  
+
+  
+
+  
+  
+
+  
+    <script src="search/main.js"></script>
+  
+
+  
+
+  <script src="js/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav">
+      <div class="nav-inner">
+        <div class="logo">
+          <img src="./img/logo-2x.png">
+        </div>
+        <div class="nav-list">
+          <ul>
+          
+              <li><a href="#jumpserver">JumpServer社区版服务实例部署文档</a></li>
+              
+                  <li><a href="#_1">概述</a></li>
+                  
+              
+                  <li><a href="#_2">计费说明</a></li>
+                  
+              
+                  <li><a href="#ram">RAM账号所需权限</a></li>
+                  
+              
+                  <li><a href="#_3">部署流程</a></li>
+                  
+                      <li class="li-h3"><a href="#_4">部署步骤</a></li>
+                  
+                      <li class="li-h3"><a href="#jumpserver_1">使用JumpServer</a></li>
+                  
+              
+          
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="content theme-github">
+      
+      <div class="content-inner">        
+        
+        <h1 id="jumpserver">JumpServer社区版服务实例部署文档</h1>
+<h2 id="_1">概述</h2>
+<p>JumpServer 是广受欢迎的开源堡垒机，是符合 4A 规范的专业运维安全审计系统。JumpServer 帮助企业以更安全的方式管控和登录所有类型的资产，实现事前授权、事中监察、事后审计，满足等保合规要求。</p>
+<h2 id="_2">计费说明</h2>
+<p>计费方式包括：
+- 按量付费（小时）
+- 包年包月</p>
+<p>预估费用在创建实例时可实时看到。</p>
+<h2 id="ram">RAM账号所需权限</h2>
+<p>JumpServer服务需要对ECS、VPC等资源进行访问和创建操作，
+若您使用RAM用户创建服务实例，需要在创建服务实例前，
+对使用的RAM用户的账号<a href="https://help.aliyun.com/document_detail/121945.html">添加相应资源的权限</a>。</p>
+<table>
+<thead>
+<tr>
+<th>权限策略名称</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AliyunECSFullAccess</td>
+<td>管理云服务器服务（ECS）的权限</td>
+</tr>
+<tr>
+<td>AliyunVPCFullAccess</td>
+<td>管理专有网络（VPC）的权限</td>
+</tr>
+<tr>
+<td>AliyunROSFullAccess</td>
+<td>管理资源编排服务（ROS）的权限</td>
+</tr>
+<tr>
+<td>AliyunComputeNestUserFullAccess</td>
+<td>管理计算巢服务（ComputeNest）的用户侧权限</td>
+</tr>
+<tr>
+<td>AliyunCloudMonitorFullAccess</td>
+<td>管理云监控（CloudMonitor）的权限</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_3">部署流程</h2>
+<h3 id="_4">部署步骤</h3>
+<ol>
+<li>
+<p>单击<a href="https://computenest.console.aliyun.com/service/instance/create/cn-hangzhou?type=user&amp;ServiceId=service-c5638ae27d34478fbb3d">部署链接</a>，进入服务实例部署界面，根据界面提示，填写参数完成部署。</p>
+<p><img alt="2.png" src="1.jpg" /></p>
+</li>
+<li>
+<p>查看服务实例。 服务实例创建成功后，部署时间大约需要2分钟。部署完成后，页面上可以看到对应的服务实例。进入服务实例详情页。</p>
+<p><img alt="2.png" src="2.jpg" /></p>
+</li>
+<li>
+<p>通过URL访问JumpServer服务</p>
+<p><img alt="2.png" src="3.jpg" /></p>
+</li>
+</ol>
+<h3 id="jumpserver_1">使用JumpServer</h3>
+<p>请访问JumpServer官网获取详细使用信息：<a href="https://docs.jumpserver.org/zh/v3/">JumpServer文档</a></p>
+        
+      </div>
+
+      <div class="copyrights">© 2009-2022 Aliyun.com 版权所有</div>
+    </div>
+  </div>
+  
+  <!--
+  MkDocs version      : 1.6.0
+  Docs Build Date UTC : 2024-05-09 02:02:00.782795+00:00
+  -->
+</body>
+</html>
