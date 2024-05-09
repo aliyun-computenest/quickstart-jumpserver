@@ -30,20 +30,18 @@ JumpServer服务需要对ECS、VPC等资源进行访问和创建操作，
 ## 部署流程
 
 ### 部署步骤
-单击[部署链接](https://computenest.console.aliyun.com/service/instance/create/cn-hangzhou?type=user&ServiceId=service-c5638ae27d34478fbb3d)，进入服务实例部署界面，根据界面提示，填写参数完成部署。
+1. 单击[部署链接](https://computenest.console.aliyun.com/service/instance/create/cn-hangzhou?type=user&ServiceId=service-c5638ae27d34478fbb3d)，进入服务实例部署界面，根据界面提示，填写参数完成部署。
 
+    ![2.png](1.jpg)
 
-### 验证结果
-1、查看服务实例。 服务实例创建成功后，部署时间大约需要2分钟。部署完成后，页面上可以看到对应的服务实例。
+2. 查看服务实例。 服务实例创建成功后，部署时间大约需要2分钟。部署完成后，页面上可以看到对应的服务实例。进入服务实例详情页。
 
-![2.png](1.jpg)
+    ![2.png](2.jpg)
 
-2、通过服务实例访问JumpServer服务
+3. 通过URL访问JumpServer服务
 
-![3.png](2.jpg)
-
-![2.png](3.jpg)
+    ![2.png](3.jpg)
 
 ### 使用JumpServer
 
-请访问JumpServer官网获取详细使用信息：[JumpServer试用文档](https://docs.jumpserver.org/zh/v3/)
+请访问JumpServer官网获取详细使用信息：[JumpServer文档](https://docs.jumpserver.org/zh/v3/)
